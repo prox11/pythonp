@@ -13,8 +13,8 @@ while True:
             print(f"A sha-256 kódolt szöveged: {dekodsha}")
             break
         elif szam == 2:
-            byte_data = szoveg.encode('utf-8')
-            dekod64 = (base64.b64encode(byte_data))
+            utfenc = szoveg.encode('utf-8')
+            dekod64 = (base64.b64encode(utfenc))
             print(f"A base64-es kódolt szöveged: {dekod64}")
             break
         elif szam == 3:
